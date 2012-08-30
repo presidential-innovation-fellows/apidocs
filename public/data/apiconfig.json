@@ -1,0 +1,11 @@
+{
+    "sbadb": {
+        "name": "Small Business Search via SBA",
+        "protocol": "http",
+        "baseURL": "127.0.0.1:3000",
+        "publicPath": "/v1",
+        "booleanTrueVal": "true",
+        "booleanFalseVal": "false",
+        "auth": ""
+    }
+}

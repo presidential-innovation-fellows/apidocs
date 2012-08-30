@@ -1,0 +1,54 @@
+{
+  "endpoints":[
+    {
+      "name":"business",
+      "methods":[
+        {
+          "MethodName":"Show",
+          "Synopsis":"Returns details for a single business",
+          "HTTPMethod":"GET",
+          "URI":"/bizs/P1064735",
+          "parameters":[]
+        },
+        {
+          "MethodName":"Search",
+          "Synopsis":"Returns a list of businesses that match the filter criteria",
+          "HTTPMethod":"GET",
+          "URI":"/bizs",
+          "parameters":[
+            {
+              "Name":"latlon",
+              "Required":"N",
+              "Type":"string",
+              "Description":"longitude, latitude"
+            },
+            {
+              "Name":"women",
+              "Required":"N",
+              "Type":"boolean",
+              "Description":"show only woman-owned"
+            },
+            {
+              "Name":"veteran",
+              "Required":"N",
+              "Type":"boolean",
+              "Description":"show only veteran-owned"
+            },
+            {
+              "Name":"dav",
+              "Required":"N",
+              "Type":"boolean",
+              "Description":"show only disabled veteran-owned"
+            },
+            {
+              "Name":"vietnam",
+              "Required":"N",
+              "Type":"boolean",
+              "Description":"show only Vietnam veteran-owned"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
