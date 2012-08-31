@@ -2,7 +2,7 @@
   "title" : "Interactive API Docs",
   "address": "0.0.0.0",
   "port" : 4000,
-  "debug" : true,
+  "debug" : false,
   "sessionSecret" : "rfpeezy",
   "redis" : {
       "host" : "localhost",

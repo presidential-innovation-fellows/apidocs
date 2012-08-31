@@ -110,9 +110,8 @@ ul
                                                                         option(value=choice) #{choice}
                                                       - else if (parameter.Type =='boolean')
                                                            select(name='params[' + parameter.Name + ']', placeholder=className)
-                                                                - if (parameter.Default =='')
-                                                                        option(value='')
-                                                                - else parameter.Default == "false"
+                                                                - if (!parameter.Default)
+                                                                    parameter.Default = ''
                                                                 - each choice in [apiInfo.booleanFalseVal, apiInfo.booleanTrueVal]
                                                                    - if (parameter.Default ==choice)
                                                                            option(value=choice, selected=true) #{choice}

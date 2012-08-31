@@ -1,7 +1,7 @@
 {
   "endpoints":[
     {
-      "name":"business",
+      "name":"Registered Small Businesses and Their Certifications",
       "methods":[
         {
           "MethodName":"Show",
@@ -45,6 +45,31 @@
               "Required":"N",
               "Type":"boolean",
               "Description":"show only Vietnam veteran-owned"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Businesses Excluded From Federal Contracting",
+      "methods":[
+        {
+          "MethodName":"Search",
+          "Synopsis":"Returns a list of businesses that match the filter criteria",
+          "HTTPMethod":"GET",
+          "URI":"/exclusions",
+          "parameters":[
+            {
+              "Name":"name",
+              "Required":"N",
+              "Type":"boolean",
+              "Description":"Search by the name"
+            },
+            {
+              "Name":"duns",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by the company's 'DUNS' number"
             }
           ]
         }

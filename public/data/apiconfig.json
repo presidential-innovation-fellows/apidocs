@@ -1,11 +1,11 @@
 {
-    "sbadb": {
-        "name": "Small Business Search via SBA",
+    "rfpez": {
+        "name": "Federal Government Contracting for Small Businesses",
         "protocol": "http",
-        "baseURL": "127.0.0.1:3000",
-        "publicPath": "/v1",
+        "baseURL": "rfpez-apis.presidentialinnovationfellows.org",
+        "publicPath": "",
         "booleanTrueVal": "true",
-        "booleanFalseVal": "false",
+        "booleanFalseVal": "",
         "auth": ""
     }
 }
