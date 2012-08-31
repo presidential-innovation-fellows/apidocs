@@ -62,7 +62,7 @@
             {
               "Name":"name",
               "Required":"N",
-              "Type":"boolean",
+              "Type":"string",
               "Description":"Search by the name"
             },
             {
