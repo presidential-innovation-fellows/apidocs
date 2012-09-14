@@ -74,6 +74,79 @@
           ]
         }
       ]
+    },
+    {
+      "name":"Contracts Available on FBO.gov",
+      "methods":[
+        {
+          "MethodName":"Search",
+          "Synopsis":"Returns a list of contracting opportunities that match the filter criteria",
+          "HTTPMethod":"GET",
+          "URI":"/opportunities",
+          "parameters":[
+            {
+              "Name":"TYPE",
+              "Required":"N",
+              "Type":"enumerated",
+              "EnumeratedList": [
+                "PRESOL",
+                "SRCSGT",
+                "SNOTE",
+                "COMBINE",
+                "AMDCSS",
+                "MOD",
+                "AWARD",
+                "JA",
+                "FAIROPP",
+                "SSALE"
+               ],
+              "EnumeratedDescription": {
+                "PRESOL" : "Presolicitation",
+                "SRCSGT" : "Sources Sought",
+                "SNOTE" : "Special Notice",
+                "COMBINE" : "Combined Synopsis/Solicitation",
+                "AMDCSS" : "Amendment/Cancel",
+                "MOD" : "Modification",
+                "AWARD" : "Award Notice",
+                "JA" : "Justification and Approval",
+                "FAIROPP" : "Fair Opportunity / Limited Sources Justification",
+                "SSALE" : "Sale of Surplus Property"
+               },
+              "Description":"Search by the type of posting"
+            },
+            {
+              "Name":"NAICS",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by NAICS code"
+            },
+            {
+              "Name":"NAICS",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by government agency"
+            },
+            {
+              "Name":"SUBJECT",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by word or phrase found in the subject"
+            },
+            {
+              "Name":"DESC",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by word or phrase found in the description"
+            },
+            {
+              "Name":"SOLNBR",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Search by unique solicitation number"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
