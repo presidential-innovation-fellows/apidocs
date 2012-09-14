@@ -121,7 +121,11 @@
               "Description":"Search by NAICS code"
             },
             {
+<<<<<<< HEAD
               "Name":"AGENCY",
+=======
+              "Name":"NAICS",
+>>>>>>> 13ef9e2bd31b700b004465ad021e5aff6cc829f8
               "Required":"N",
               "Type":"string",
               "Description":"Search by government agency"
