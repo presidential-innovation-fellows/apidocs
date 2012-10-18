@@ -8,6 +8,7 @@
           "Synopsis": "Returns the authorizing user's profile information",
           "HTTPMethod": "GET",
           "URI": "profile.json",
+          "RequiresOAuth": "Y",
           "parameters": [
             {
               "Name": "schema",
@@ -22,6 +23,7 @@
           "Synopsis": "Delivers a notification message to the authorizing user.",
           "HTTPMethod": "POST",
           "URI": "message",
+          "RequiresOAuth": "Y",
           "parameters": [
             {
               "Name": "id",
