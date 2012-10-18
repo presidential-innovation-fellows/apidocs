@@ -7,5 +7,23 @@
         "booleanTrueVal": "true",
         "booleanFalseVal": "",
         "auth": ""
+    },
+    "mygov": {
+        "name": "MyGov API",
+        "protocol": "http",
+        "baseURL": "my.usa.gov",
+        "publicPath": "/",
+        "booleanTrueVal": "true",
+        "booleanFalseVale": "false",
+        "auth": "oauth",
+        "oauth": {
+            "type": "three-legged",
+            "requestURL": "https://my.usa.gov/oauth/authorize?response_type=code",
+            "signinURL": "https://my.usa.gov/oauth/authorize",
+            "accessURL": "https://my.usa.gov/oauth/allow",
+            "version": "2.0",
+            "crypt": "HMAC-SHA1"
+        },
+        "keyParam": ""
     }
 }
