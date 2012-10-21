@@ -12,7 +12,7 @@
         "name": "MyGov API",
         "protocol": "http",
         "baseURL": "my.usa.gov",
-        "publicPath": "/",
+        "publicPath": "/api",
         "booleanTrueVal": "true",
         "booleanFalseVale": "false",
         "auth": "oauth",
