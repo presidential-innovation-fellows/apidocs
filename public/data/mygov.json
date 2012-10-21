@@ -4,7 +4,7 @@
       "name": "MyGov",
       "methods": [
         {
-          "MethodName": "/profile",
+          "MethodName": "/api/profile.json",
           "Synopsis": "Returns the authorizing user's profile information",
           "HTTPMethod": "GET",
           "URI": "profile.json",
@@ -19,7 +19,7 @@
           ]
         },
         {
-          "MethodName": "/message",
+          "MethodName": "/api/message",
           "Synopsis": "Delivers a notification message to the authorizing user.",
           "HTTPMethod": "POST",
           "URI": "message",
@@ -42,6 +42,50 @@
               "Required": "N",
               "Type": "string",
               "Description": "The body of the notification."
+            }
+          ]
+        },
+        {
+          "MethodName": "/api/tasks.json",
+          "Synopsis": "List all the tasks created by the calling application.",
+          "HTTPMethod": "GET",
+          "URI": "tasks.json",
+          "RequiresOAuth": "Y",
+          "parameters": []
+        },
+        {
+          "MethodName": "/api/tasks",
+          "Synopsis": "Create a new task for the user for this application.",
+          "HTTPMethod": "POST",
+          "URI": "tasks",
+          "RequiresOAuth": "Y",
+          "parameters": [
+            {
+              "Name": "task[name]",
+              "Required": "Y",
+              "Type": "string",
+              "Description": "The name for the task that is being created."
+            },
+            {
+              "Name": "task[task_items_attributes]",
+              "Required": "Y",
+              "Type": "string",
+              "Description": "A list of task items to be associated with the task.  Task Items are pointers to forms using a form_id."
+            }
+          ]
+        },
+        {
+          "MethodName": "/api/tasks/:id.json",
+          "Synopsis": "All tasks and task items for a given task",
+          "HTTPMethod": "GET",
+          "URI": "tasks/:id.json",
+          "RequiresOAuth": "Y",
+          "parameters": [
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Type": "integer",
+              "Description": "The id for the task that you would like to get more information on.  Can be retrieved via /tasks.json"
             }
           ]
         }
