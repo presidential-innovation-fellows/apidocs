@@ -4,10 +4,10 @@
       "name": "MyGov",
       "methods": [
         {
-          "MethodName": "/api/profile.json",
+          "MethodName": "/api/profile",
           "Synopsis": "Returns the authorizing user's profile information",
           "HTTPMethod": "GET",
-          "URI": "profile.json",
+          "URI": "profile",
           "RequiresOAuth": "Y",
           "parameters": [
             {
@@ -19,18 +19,12 @@
           ]
         },
         {
-          "MethodName": "/api/message",
+          "MethodName": "/api/notification",
           "Synopsis": "Delivers a notification message to the authorizing user.",
           "HTTPMethod": "POST",
-          "URI": "message",
+          "URI": "notification",
           "RequiresOAuth": "Y",
           "parameters": [
-            {
-              "Name": "id",
-              "Required": "Y",
-              "Type": "integer",
-              "Description": "The MyGov id of the user you would like to send a notification to."
-            },
             {
               "Name": "subject",
               "Required": "Y",
@@ -46,10 +40,10 @@
           ]
         },
         {
-          "MethodName": "/api/tasks.json",
+          "MethodName": "/api/tasks",
           "Synopsis": "List all the tasks created by the calling application.",
           "HTTPMethod": "GET",
-          "URI": "tasks.json",
+          "URI": "tasks",
           "RequiresOAuth": "Y",
           "parameters": []
         },
@@ -75,17 +69,17 @@
           ]
         },
         {
-          "MethodName": "/api/tasks/:id.json",
+          "MethodName": "/api/tasks/:id",
           "Synopsis": "All tasks and task items for a given task",
           "HTTPMethod": "GET",
-          "URI": "tasks/:id.json",
+          "URI": "tasks/:id",
           "RequiresOAuth": "Y",
           "parameters": [
             {
               "Name": "id",
               "Required": "Y",
               "Type": "integer",
-              "Description": "The id for the task that you would like to get more information on.  Can be retrieved via /tasks.json"
+              "Description": "The id for the task that you would like to get more information on.  Can be retrieved via /tasks"
             }
           ]
         }
