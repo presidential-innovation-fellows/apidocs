@@ -147,6 +147,25 @@
           ]
         }
       ]
+    },
+    {
+      "name":"Awards given to contractors",
+      "methods":[
+        {
+          "MethodName":"Search",
+          "Synopsis":"Returns a list of contract awards that match the filter criteria",
+          "HTTPMethod":"GET",
+          "URI":"/awards",
+          "parameters":[
+            {
+              "Name":"q",
+              "Required":"N",
+              "Type":"string",
+              "Description":"Wildcard search field; company name, DUNS, etc."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
