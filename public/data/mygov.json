@@ -82,6 +82,27 @@
               "Description": "The id for the task that you would like to get more information on.  Can be retrieved via /tasks"
             }
           ]
+        },
+        {
+          "MethodName": "/api/forms",
+          "Synopsis": "Submit a response to a form on behalf of an authenticated user.",
+          "HTTPMethod": "POST",
+          "URI": "forms",
+          "RequiresOAuth": "Y",
+          "parameters": [
+            {
+              "Name": "form_number",
+              "Required": "Y",
+              "Type": "string",
+              "Description": "The form number from the Forms Engine matching the form that the user is responding to."
+            },
+            {
+              "Name": "data",
+              "Required": "N",
+              "Type": "string",
+              "Description": "Hash representing filled-in values for this response."
+            }
+          ]
         }
       ]
     }
