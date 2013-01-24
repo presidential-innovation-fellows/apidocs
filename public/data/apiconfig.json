@@ -29,7 +29,7 @@
     "mygov-discovery": {
         "name": "MyGov Discovery API",
         "protocol": "http",
-        "baseURL": "staging.discovery.my.usa.gov",
+        "baseURL": "discovery.my.usa.gov",
         "publicPath": "",
         "headers": {
           "Accept": "application/json"
